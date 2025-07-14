@@ -4,7 +4,7 @@ from groq import Groq
 
 import os
 os.environ['GROQ_API_KEY'] = ""
-# for cloud ..........
+# for cloud .........
 
 app = Flask(__name__)
 
