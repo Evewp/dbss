@@ -4,9 +4,8 @@ import joblib
 =======
 from groq import Groq
 
-# Comment off due to API key for security
-# import os
-# os.environ['GROQ_API_KEY'] = "" 
+import os
+os.environ['GROQ_API_KEY'] = ""
 # for cloud ..........
 >>>>>>> 9f9d54f (update app.py)
 
