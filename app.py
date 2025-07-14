@@ -1,5 +1,13 @@
 from flask import Flask, render_template, request
 import joblib
+<<<<<<< HEAD
+=======
+from groq import Groq
+
+import os
+# os.environ['GROQ_API_KEY'] = "" # API key removed for security
+# for cloud ..........
+>>>>>>> 9f9d54f (update app.py)
 
 app = Flask(__name__)
 
