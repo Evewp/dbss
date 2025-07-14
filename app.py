@@ -9,10 +9,8 @@ def index():
 
 @app.route("/main",methods=["GET","POST"])
 def main():
-    q = float(request.form.get("q"))
-
+    q = request.form.get("q")
     # DB
-
     return(render_template("main.html"))
 
 @app.route("/dbs",methods=["GET","POST"])
