@@ -7,18 +7,6 @@ app = Flask(__name__)
 def index():
     return(render_template("index.html"))
 
-@app.route("/main",methods=["GET","POST"])
-def main():
-    q = float(request.form.get("q"))
-
-    # DB
-
-    return(render_template("main.html"))
-
-@app.route("/dbs",methods=["GET","POST"])
-def dbs():
-    return(render_template("dbs.html"))
-
 @app.route("/prediction",methods=["GET","POST"])
 def prediction():
     q = float(request.form.get("q"))
