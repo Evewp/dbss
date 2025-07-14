@@ -10,6 +10,13 @@ def index():
 @app.route("/prediction",methods=["GET","POST"])
 def prediction():
     q = float(request.form.get("q"))
+
+    # Load Model
+    model = joblib.load("dbs.jl")
+
+    # Make Prediction
+    pred = model.predict([[q]])
+
     return(render_template("prediction.html",r=(-50.6*q)+90.2))
 
 # This is for local testing
