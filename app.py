@@ -4,11 +4,14 @@ import joblib
 =======
 from groq import Groq
 
+<<<<<<< HEAD
 import os
 os.environ['GROQ_API_KEY'] = ""
 # for cloud ..........
 >>>>>>> 9f9d54f (update app.py)
 
+=======
+>>>>>>> 777d5d0 (update app.py)
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
