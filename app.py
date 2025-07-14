@@ -5,6 +5,7 @@ import joblib
 from groq import Groq
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import os
 os.environ['GROQ_API_KEY'] = ""
 # for cloud ..........
@@ -12,6 +13,12 @@ os.environ['GROQ_API_KEY'] = ""
 
 =======
 >>>>>>> 777d5d0 (update app.py)
+=======
+import os
+os.environ['GROQ_API_KEY'] = ""
+# for cloud ..........
+
+>>>>>>> f85de7d (Update app.py)
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
